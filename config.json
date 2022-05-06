@@ -1,0 +1,176 @@
+{
+  "name": "archway-marketplace-contract",
+  "developer": {
+    "archwayd": {
+      "docker": true
+    },
+    "scripts": {
+      "test": "cargo unit-test",
+      "build": "cargo build",
+      "optimize": "cargo run-script optimize",
+      "wasm": "cargo wasm",
+      "query": "archwayd query wasm",
+      "tx": "archwayd tx wasm execute"
+    },
+    "deployments": [
+      {
+        "type": "instantiate",
+        "chainId": "torii-1",
+        "codeId": 49026,
+        "address": "archway19l8y7x2pl0h42yyau7jl6tz06ane2f99kxh8juc6yw8j907dvjhqy5s4u4",
+        "admin": "archway1x86agw74qn0sery9k6rerthahe2ktrukvrkvc5"
+      },
+      {
+        "type": "create",
+        "chainId": "torii-1",
+        "codeId": 49026
+      },
+      {
+        "type": "instantiate",
+        "chainId": "constantine-1",
+        "codeId": 197,
+        "address": "archway1ncndz426n9g3vxvqkkuaq73u9qze63zfgrj4yv3jawn59w5qahfqkqf8q0",
+        "admin": "archway1x86agw74qn0sery9k6rerthahe2ktrukvrkvc5"
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 197
+      },
+      {
+        "type": "instantiate",
+        "chainId": "constantine-1",
+        "codeId": 196,
+        "address": "archway1j4vg3vkvutx2wcv7xtstmyjc8mmr9ufgaxrz0j3zyqydmumczapqmksf9m",
+        "admin": "archway1x86agw74qn0sery9k6rerthahe2ktrukvrkvc5"
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 196
+      },
+      {
+        "type": "instantiate",
+        "chainId": "constantine-1",
+        "codeId": 194,
+        "address": "archway1d052f7hmsx2qs53q2qdhwklwvkudzegqw9wuy225us8a9pu6kymq5sjthj",
+        "admin": "archway1x86agw74qn0sery9k6rerthahe2ktrukvrkvc5"
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 194
+      },
+      {
+        "type": "instantiate",
+        "chainId": "constantine-1",
+        "codeId": 192,
+        "address": "archway127lvz2q8q9dnrc3h2mtv2h63te5sf26dj9l82vv59ax8f6car92s3042fj",
+        "admin": "archway1x86agw74qn0sery9k6rerthahe2ktrukvrkvc5"
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 192
+      },
+      {
+        "type": "instantiate",
+        "chainId": "constantine-1",
+        "codeId": 183,
+        "address": "archway1avhqfuc4cexld0vkz77tg7w8qdxf3vkp75tnxc7hqrwjc3xwp02scuf8yv",
+        "admin": "archway1x86agw74qn0sery9k6rerthahe2ktrukvrkvc5"
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 183
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 182
+      },
+      {
+        "type": "instantiate",
+        "chainId": "constantine-1",
+        "codeId": 181,
+        "address": "archway1m0gh4925wnrg0hlnuysh2qz8jjpt08c3z2m4e6rn4le7aa8cjvcqx565z8",
+        "admin": "archway1x86agw74qn0sery9k6rerthahe2ktrukvrkvc5"
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 181
+      },
+      {
+        "type": "instantiate",
+        "chainId": "constantine-1",
+        "codeId": 180,
+        "address": "archway16eqnwnr8c9cly5t3883ky7jz37d4v62la6apslnlxp6g79l3u2wqxhzgrs",
+        "admin": "archway1x86agw74qn0sery9k6rerthahe2ktrukvrkvc5"
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 180
+      },
+      {
+        "type": "instantiate",
+        "chainId": "constantine-1",
+        "codeId": 179,
+        "address": "archway12d3hqj00gm88pf3yrke226dvqs82ajat5z9w6t30395e3ddndnpqz3jlch",
+        "admin": "archway1x86agw74qn0sery9k6rerthahe2ktrukvrkvc5"
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 179
+      },
+      {
+        "type": "instantiate",
+        "chainId": "constantine-1",
+        "codeId": 178,
+        "address": "archway1adtwwhvxw7a4tdcvfj7af0xnrtwc07caafrfemegdect5l8w2s7sfklq9p",
+        "admin": "archway1x86agw74qn0sery9k6rerthahe2ktrukvrkvc5"
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 178
+      },
+      {
+        "type": "create",
+        "chainId": "constantine-1",
+        "codeId": 177
+      }
+    ]
+  },
+  "network": {
+    "name": "torii",
+    "chainId": "torii-1",
+    "type": "testnet",
+    "fees": {
+      "feeDenom": "utorii"
+    },
+    "gas": {
+      "prices": "0.002utorii",
+      "mode": "auto",
+      "adjustment": "1.3"
+    },
+    "wasm": {
+      "bech32Hrp": "archway",
+      "archwayd": "0.0.4",
+      "configDir": ".archway",
+      "binary": "archwayd"
+    },
+    "urls": {
+      "rpc": {
+        "url": "https://rpc.torii-1.archway.tech",
+        "port": 443
+      },
+      "faucets": [
+        "https://faucet.constantine-1.archway.tech"
+      ]
+    }
+  }
+}
